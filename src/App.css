@@ -39,3 +39,20 @@ p{
   letter-spacing: 0.3px;
   font-weight: 500;
 }
+
+ul li a{
+  position: relative;  
+}
+ul li a::before{
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  left: 0;
+  bottom: -5px;
+  transition: all .3s ease-in-out;
+}
+ul li a:hover::before{
+  width: 100%;
+}
