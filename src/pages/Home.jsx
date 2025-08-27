@@ -10,8 +10,8 @@ const Home = () => {
             <div className="grid grid-cols-2 gap-10 items-center">
                 <div className='flex flex-col gap-4'>
                     <h1 className='text-white'>Lorem ipsum dolor sit amet.</h1>
-                    <p className='!text-white !text-xl'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste minus quibusdam ipsa illo quisquam quo magni minima libero doloremque dolores.</p>
-                    <Button variant='secondary' className="text-white w-fit px-10 py-6 text-lg light-bg :hover-light-bg relative z-0 overflow-hidden">Get Started</Button>
+                    <p className='!text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste minus quibusdam ipsa illo quisquam quo magni minima libero doloremque dolores.</p>
+                    <Button variant='secondary' className="text-white w-fit px-10 py-6 text-md light-bg :hover-light-bg relative z-0 overflow-hidden">Get Started</Button>
                 </div>
                 <div>
                     <img src="/assets/imgs/hero-img.png" className='w-full h-full max-w-[500px] ms-auto' alt="" />
@@ -29,8 +29,8 @@ const Home = () => {
                 </div>
                 <div>
                     <h2 className='mb-4'>About Us</h2>
-                    <p className='mb-4 !text-xl'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste minus quibusdam ipsa illo quisquam quo magni minima libero doloremque dolores.</p>
-                    <Button variant='default' className="p-6 text-lg relative z-0 overflow-hidden">Get Started</Button>
+                    <p className='mb-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste minus quibusdam ipsa illo quisquam quo magni minima libero doloremque dolores.</p>
+                    <Button variant='default' className="p-6 text-md relative z-0 overflow-hidden">Get Started</Button>
                 </div>
             </div>
         </div>

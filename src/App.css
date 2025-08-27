@@ -1,12 +1,14 @@
 @font-face {
-  font-family: 'bordju';
+  font-family: 'taskor';
   /* src: url('/assets/fonts/Agrozza.ttf') format('opentype'); */
-  src: url('/assets/fonts/bordju.ttf') format('opentype');
+  /* src: url('/assets/fonts/bordju.ttf') format('opentype'); */
+  src: url('/assets/fonts/Taskor.ttf') format('opentype');
 }
 body{
   /* font-family: 'Agrozza'; */
-  font-family: 'bordju'; 
-  letter-spacing: 3px;
+  /* font-family: 'bordju'; */
+  font-family: 'taskor';
+  letter-spacing: 1px;
 }
 .custom-container{
   margin: 0 auto;
@@ -14,12 +16,11 @@ body{
   max-width: 1100px;
 }
 h1{
-  font-size: 60px;
+  font-size: 50px;
   line-height: normal;
-  font-weight: 700;
 }
 h2{
-  font-size: 45px;
+  font-size: 35px;
   line-height: normal;
   font-weight: 700;
   color: black;
@@ -48,8 +49,6 @@ p{
 }
 .header-main ul li a{
   color: #fff;
-  letter-spacing: 2px;
-  font-weight: 500;
 }
 
 ul li a{
@@ -183,16 +182,16 @@ button:hover{
 button::after {
   position: absolute;
   content: "";
-  left: 0;
+  left: 50%;
   top: 0;
   height: 100%;
-  width: 100%;
-  transform: scaleX(0);
+  width: 125%;
+  transform: translateX(-50%) scaleX(0);
   transition: 0.3s;
-  background: linear-gradient(90deg, #3B38A0 0%, #7A85C1 100%);
+  background: linear-gradient(120deg, #3B38A0 0%, #7A85C1 100%);
   z-index: -1;
 }
 button:hover:after {
-  transform: scale(1);
-  transition: 0.3s;
+  transform: translateX(-50%) scale(1) skewX(50deg);
+  transition: 0.5s;
 }
