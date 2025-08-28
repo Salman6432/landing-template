@@ -195,3 +195,51 @@ button:hover:after {
   transform: translateX(-50%) scale(1) skewX(50deg);
   transition: 0.5s;
 }
+.section-title-bage{
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 50px;
+  background: rgba(46, 7, 151, 0.05);
+  margin: 0 auto;
+}
+.section-title-bage span{
+  margin: 0;
+  border-radius: 50px;
+  font-size: 16px;
+  line-height: 14px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #2E0797 0%, #726EFC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradiant-hover-card > div{
+  position: relative;
+  z-index: 5;
+}
+.gradiant-hover-card{
+  background-color: white;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+.gradiant-hover-card::before{
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: linear-gradient(90deg, #2E0797 0%, #726EFC 100%);
+  transform: translateX(-101%);
+  transition: all .3s ease-in-out;
+}
+.gradiant-hover-card:hover::before{
+  transform: translateX(0);
+}
+.gradiant-hover-card:hover p,.gradiant-hover-card:hover h4,
+.gradiant-hover-card:hover a,
+.gradiant-hover-card:hover .icon{
+  color: #fff !important;
+}
