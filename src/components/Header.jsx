@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <div className="custom-container relative">
       <header
-        className={`header 
+        className={`header header-main 
           ${step === "circle" ? "circle" : ""} 
           ${step === "header" ? "animate shape-radius" : ""}`}
         >
