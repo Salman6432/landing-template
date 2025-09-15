@@ -34,16 +34,16 @@ export default function Header() {
             <nav>
               <ul className="flex space-x-10 text-gray-700">
                 <li data-aos="fade-left" data-aos-delay="150">
-                  <a href="#home" className="text-xl">Home</a>
+                  <a href="/" className="text-xl">Home</a>
                 </li>
                 <li data-aos="fade-left" data-aos-delay="250">
-                  <a href="#about" className="text-xl">About</a>
+                  <a href="/about" className="text-xl">About</a>
                 </li>
                 <li data-aos="fade-left" data-aos-delay="350">
-                  <a href="#faq" className="text-xl">FAQ&apos;s</a>
+                  <a href="/services" className="text-xl">Services</a>
                 </li>
                 <li data-aos="fade-left" data-aos-delay="450">
-                  <a href="#contact" className="text-xl">Contact</a>
+                  <a href="/contact" className="text-xl">Contact</a>
                 </li>
               </ul>
             </nav>

@@ -249,11 +249,19 @@ button:hover:after {
   left: 0;
   z-index: 4;
   background: linear-gradient(90deg, #2E0797 0%, #726EFC 100%);
-  transform: translateX(-101%);
-  transition: all .3s ease-in-out;
+  transform: translateX(-100%) translateY(100%) rotate(25deg);
+  transition: all .5s ease-in-out;
+  border-radius: 80%;
 }
 .gradiant-hover-card:hover::before{
-  transform: translateX(0);
+  transform: translate(0) rotate(0);
+  border-radius: 0%;
+}
+.gradiant-hover-card p,
+.gradiant-hover-card h4,
+.gradiant-hover-card a,
+.gradiant-hover-card .icon{
+  transition: all .2s ease-in-out;
 }
 .gradiant-hover-card:hover p,.gradiant-hover-card:hover h4,
 .gradiant-hover-card:hover a,
