@@ -51,6 +51,30 @@ p, li{
   animation-name: gradients;
   /* margin-top: -104px; */
 }
+.hero-main .banner-img{
+  position: relative;
+}
+.hero-main .banner-img .banner-icon{
+  position: absolute;
+  bottom: 35%;
+  left: 30px;
+  animation: up-down 1.5s infinite alternate ease-in-out;
+}
+@keyframes up-down {
+  0%{
+    transform: translateY(-10px);
+  }100%{
+    transform: translate(10px);
+  }
+
+}
+.hero-main .banner-img .banner-icon-2 {
+  position: absolute;
+  bottom: 60%;
+  right: 30px;
+  left: unset;
+  animation-duration: 2s;
+}
 .header-main{
   background-color: rgba(255, 2555, 255, .1);
 }
@@ -239,6 +263,7 @@ button:hover:after {
   border-radius: 12px;
   position: relative;
   overflow: hidden;
+  transition: all .3s ease-in-out;
 }
 .gradiant-hover-card::before{
   width: 100%;
@@ -256,6 +281,12 @@ button:hover:after {
 .gradiant-hover-card:hover::before{
   transform: translate(0) rotate(0);
   border-radius: 0%;
+}
+.gradiant-hover-card:hover{
+  border-top-right-radius: 60px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 60px;
 }
 .gradiant-hover-card p,
 .gradiant-hover-card h4,
